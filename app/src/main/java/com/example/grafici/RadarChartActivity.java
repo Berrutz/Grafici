@@ -48,7 +48,7 @@ public class RadarChartActivity extends AppCompatActivity {
         array2.add(new RadarEntry(450));
         array2.add(new RadarEntry(200));
 
-        RadarDataSet radarDataSet2 = new RadarDataSet(array2,"Visitors2");
+        RadarDataSet radarDataSet2 = new RadarDataSet(array2,"Visitors22");
         radarDataSet2.setColor(Color.BLUE);
         radarDataSet2.setLineWidth(2f);
         radarDataSet2.setValueTextColor(Color.BLUE);
