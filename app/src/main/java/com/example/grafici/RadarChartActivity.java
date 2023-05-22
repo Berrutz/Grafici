@@ -28,14 +28,14 @@ public class RadarChartActivity extends AppCompatActivity {
 
         RadarChart radarChart = findViewById(R.id.radarChart);
 
-        ArrayList<RadarEntry> array =  new ArrayList<>();
+        ArrayList<RadarEntry> array =  new ArrayList<>();  // get data
         array.add(new RadarEntry(250));
         array.add(new RadarEntry(350));
         array.add(new RadarEntry(750));
         array.add(new RadarEntry(150));
         array.add(new RadarEntry(950));
 
-        RadarDataSet radarDataSet = new RadarDataSet(array,"Visitors");
+        RadarDataSet radarDataSet = new RadarDataSet(array,"Visitors");  // setting options for
         radarDataSet.setColor(Color.RED);
         radarDataSet.setLineWidth(2f);
         radarDataSet.setValueTextColor(Color.RED);
@@ -65,6 +65,7 @@ public class RadarChartActivity extends AppCompatActivity {
 
         radarChart.getDescription().setText("Radar Chart");
         radarChart.setData(radarData);
+
 
 
     }

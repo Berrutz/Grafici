@@ -1,34 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:gravity="center"
-    android:padding="10dp"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:orientation="vertical">
+    android:orientation="horizontal"
+    android:layout_gravity="center_vertical"
+    tools:context=".BarChartActivity">
 
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:id="@+id/ButtonBarChart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:text="@string/bar_chart"
-        />
+        app:layout_constraintTop_toBottomOf="@+id/ButtonRadarChart"
+        tools:layout_editor_absoluteX="0dp" />
 
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:id="@+id/ButtonPieChart"
-        android:text="@string/pie_chart"
-        />
-
-    <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/pie_chart"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
         android:id="@+id/ButtonRadarChart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:text="@string/radar_chart"
-        />
+        app:layout_constraintTop_toBottomOf="@+id/ButtonPieChart"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <RelativeLayout
+        android:layout_width="428dp"
+        android:layout_height="537dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ButtonBarChart"/>
 
 
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

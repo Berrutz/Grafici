@@ -19,9 +19,6 @@
             android:name=".PieChartActivity"
             android:exported="false" />
         <activity
-            android:name=".ButtonBarChart"
-            android:exported="false" />
-        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
